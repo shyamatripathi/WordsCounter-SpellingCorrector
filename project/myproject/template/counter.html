@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word Counter Results</title>
+    <style>
+        
+body {
+    background-color: #f4f4f4; 
+    padding: 20px;
+}
+
+
+
+.word-count::before {
+    content: "Word Count: ";
+    font-weight: bold;
+}
+
+.corrected-text::before {
+    content: "Corrected Text: ";
+    font-weight: bold;
+}
+
+        
+        h1 {
+            text-align: center;
+            color: #007bff;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Word Counter Results</h1>
+    <ul>
+        <li class="word-count">The number of words is: {{ amount }}</li>
+        <li class="corrected-text">The corrected text is : {{ corrected_text }}</li>
+    </ul>
+</body>
+</html>
